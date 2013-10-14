@@ -1,0 +1,11 @@
+<p>Hi,<%=@name%></p>
+	<ul>
+	<% @users.each do |u| %>
+	<li>
+	name: <%=u.name %>
+	age: <%=u.age %>
+	email: <%=u.email %>
+	</li>
+	<% end %>
+	</ul>
+<p><%=link_to "new user", "/user/new" %></p>
