@@ -33,7 +33,7 @@ Bundler.require(:default, PADRINO_ENV)
 ##
 # Add your before (RE)load hooks here
 require 'carrierwave/mongoid'
-require './app/uploader/ImageUploader'
+require './app/uploader/image_uploader'
 #
 Padrino.before_load do
 end
@@ -42,6 +42,7 @@ end
 # Add your after (RE)load hooks here
 #
 Padrino.after_load do
+  Mongoid.load!(File.join(Padrino.root, 'config', 'database.yml'), Padrino.env)
 end
 
 Padrino.load!

@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 # gemspec
 
 # Server requirements
-# gem 'thin' # or mongrel
+gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
 
 # Optional JSON codec (faster performance)
@@ -12,7 +12,7 @@ source 'https://rubygems.org'
 
 # Project requirements
 gem 'rake'
-
+gem 'json','~>1.8.1'
 # Component requirements
 gem 'slim'
 gem 'mongoid', '~>3.0.0'
@@ -20,7 +20,7 @@ gem 'carrierwave','0.9.0', :require => 'carrierwave'
 gem 'carrierwave-mongoid','0.6.3'
 gem "mini_magick", "~> 3.6.0"
 # Test requirements
-
+gem 'sinatra-contrib', '~> 1.4.1'
 
 # gem 'carrierwave', '0.6.2'
 # # gem 'carrierwave-upyun', '0.1.5'
@@ -29,7 +29,7 @@ gem "mini_magick", "~> 3.6.0"
 
 
 # Padrino Stable Gem
-gem 'padrino', '0.11.3'
+gem 'padrino' #, '0.11.3'
 
 # Or Padrino Edge
 # gem 'padrino', :github => 'padrino/padrino-framework'

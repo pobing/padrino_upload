@@ -17,4 +17,11 @@ PadrinoUpload::App.controllers :user do
     end
   end
 
+  delete :user, :map=>"/user/:id" do 
+    binding.pry
+    user = User.find params[:id]
+    user.destroy
+    redirect url(:user, :index)
+  end
+
 end

@@ -1,0 +1,24 @@
+development:
+  sessions:
+    default:
+      database: padrino_upload_development
+      hosts:
+        - localhost:27017 
+  options:
+    raise_not_found_error: false      
+production:
+  sessions:
+    default:
+      database: padrino_upload_production
+      hosts:
+        - localhost:27017
+  options:
+    raise_not_found_error: false            
+test:
+  sessions:
+    default:
+      database: padrino_upload_test
+      hosts:
+        - localhost:27017
+  options:
+    raise_not_found_error: false            

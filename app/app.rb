@@ -3,7 +3,7 @@ module PadrinoUpload
     register Padrino::Rendering
     register Padrino::Mailer
     register Padrino::Helpers
-
+    helpers Sinatra::JSON
     enable :sessions
 
     ##
