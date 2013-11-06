@@ -32,6 +32,8 @@ Bundler.require(:default, PADRINO_ENV)
 
 ##
 # Add your before (RE)load hooks here
+require 'carrierwave/mongoid'
+require './app/uploader/ImageUploader'
 #
 Padrino.before_load do
 end

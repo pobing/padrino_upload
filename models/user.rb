@@ -8,9 +8,6 @@ class User
   field :email, :type => String
   attr_accessible :image 
   field :image 
-  # You can define indexes on documents using the index macro:
-  # index :field <, :unique => true>
+  mount_uploader :image, ImageUploader
 
-  # You can create a composite key in mongoid to replace the default id using the key macro:
-  # key :field <, :another_field, :one_more ....>
 end

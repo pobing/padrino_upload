@@ -6,6 +6,10 @@
 	age: <%=u.age %>
 	email: <%=u.email %>
 	</li>
+ original <%= image_tag u.image %>
+ 180*108 <%= image_tag u.image.url(:normal) %>
+ 50*50 <%= image_tag u.image.url(:thumb) %>
+ 20*20 <%= image_tag u.image.url(:small) %>
 	<% end %>
 	</ul>
 <p><%=link_to "new user", "/user/new" %></p>
