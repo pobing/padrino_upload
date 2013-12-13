@@ -1,14 +1,13 @@
 module PadrinoUpload
-  class App < Padrino::Application
+  class Files < Padrino::Application
     register Padrino::Rendering
     register Padrino::Mailer
     register Padrino::Helpers
-    helpers Sinatra::JSON
+
     enable :sessions
-    
-    set :user, "/"
+
     ##
-    # Caching support
+    # Caching support.
     #
     # register Padrino::Cache
     # enable :caching
@@ -23,7 +22,7 @@ module PadrinoUpload
     #
 
     ##
-    # Application configuration options
+    # Application configuration options.
     #
     # set :raise_errors, true       # Raise exceptions (will stop application) (default for test)
     # set :dump_errors, true        # Exception backtraces are written to STDERR (default for production/development)
@@ -58,20 +57,5 @@ module PadrinoUpload
     #     render 'errors/505'
     #   end
     #
-    # app/app.rb
-    use OmniAuth::Builder do
-      # provider :twitter,  'consumer_key', 'consumer_secret'
-      # provider :facebook, 'app_id', 'app_secret'
-       # provider :qq_connect, ENV['QQ_CONNECT_KEY'], ENV['QQ_CONNECT_SECRET']
-       provider :weibo, "2300889339", "15434969d2beeed8847b441ed356fbf3"
-    end
-
-    # get "/" do 
-    #   # haml <<-HAML.gsub(/^ {6}/, '')
-    #   #   Login with
-    #   #   =link_to('Weibo', '/auth/weibo')
-    #   # HAML
-    #   "hello word"
-    # end
   end
 end

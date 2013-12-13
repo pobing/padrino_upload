@@ -6,7 +6,7 @@ source 'https://rubygems.org'
 # Server requirements
 gem 'thin' # or mongrel
 # gem 'trinidad', :platform => 'jruby'
-
+gem 'bcrypt-ruby'
 # Optional JSON codec (faster performance)
 # gem 'oj'
 
@@ -22,10 +22,9 @@ gem "mini_magick", "~> 3.6.0"
 # Test requirements
 gem 'sinatra-contrib', '~> 1.4.1'
 
-# gem 'carrierwave', '0.6.2'
-# # gem 'carrierwave-upyun', '0.1.5'
-# gem 'mini_magick','3.3', require: false
-
+gem 'omniauth'
+gem 'omniauth-weibo-oauth2'
+# gem "omniauth-qq", "~> 0.3.0"
 
 
 # Padrino Stable Gem

@@ -8,6 +8,7 @@ GEM
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
     backports (3.3.5)
+    bcrypt-ruby (3.1.2)
     builder (3.0.4)
     carrierwave (0.9.0)
       activemodel (>= 3.2.0)
@@ -20,11 +21,17 @@ GEM
     coderay (1.0.9)
     daemons (1.1.9)
     eventmachine (1.0.3)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    hashie (2.0.5)
     http_router (0.11.0)
       rack (>= 1.0.0)
       url_mount (~> 0.2.1)
+    httpauth (0.2.0)
     i18n (0.6.5)
     json (1.8.1)
+    jwt (0.1.8)
+      multi_json (>= 1.5)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -42,6 +49,22 @@ GEM
       mongoid (~> 3.0)
     moped (1.5.1)
     multi_json (1.8.2)
+    multipart-post (1.2.0)
+    oauth2 (0.8.1)
+      faraday (~> 0.8)
+      httpauth (~> 0.1)
+      jwt (~> 0.1.4)
+      multi_json (~> 1.0)
+      rack (~> 1.2)
+    omniauth (1.1.4)
+      hashie (>= 1.2, < 3)
+      rack
+    omniauth-oauth2 (1.1.1)
+      oauth2 (~> 0.8.0)
+      omniauth (~> 1.0)
+    omniauth-weibo-oauth2 (0.3.0)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.0)
     origin (1.1.0)
     padrino (0.11.4)
       padrino-admin (= 0.11.4)
@@ -119,11 +142,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby
   carrierwave (= 0.9.0)
   carrierwave-mongoid (= 0.6.3)
   json (~> 1.8.1)
   mini_magick (~> 3.6.0)
   mongoid (~> 3.0.0)
+  omniauth
+  omniauth-weibo-oauth2
   padrino
   pry (~> 0.9.10)
   pry-nav (~> 0.2.3)

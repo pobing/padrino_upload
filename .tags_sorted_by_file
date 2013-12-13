@@ -1,0 +1,25 @@
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+App	app/app.rb	/^  class App < Padrino::Application$/;"	c	class:PadrinoUpload
+PadrinoUpload	app/app.rb	/^module PadrinoUpload$/;"	m
+current_user	app/helpers/user_helper.rb	/^  def current_user$/;"	f
+current_user=	app/helpers/user_helper.rb	/^  def current_user=(user)$/;"	f
+sign_in	app/helpers/user_helper.rb	/^  def sign_in(user)$/;"	f
+sign_in_user	app/helpers/user_helper.rb	/^  def sign_in_user$/;"	f
+sign_out	app/helpers/user_helper.rb	/^  def sign_out$/;"	f
+signed_in?	app/helpers/user_helper.rb	/^  def signed_in?$/;"	f
+ImageUploader	app/uploader/image_uploader.rb	/^class ImageUploader < CarrierWave::Uploader::Base$/;"	c
+extensions_white_list	app/uploader/image_uploader.rb	/^  def extensions_white_list $/;"	f	class:ImageUploader
+filename	app/uploader/image_uploader.rb	/^  def filename$/;"	f	class:ImageUploader
+store_dir	app/uploader/image_uploader.rb	/^  def store_dir$/;"	f	class:ImageUploader
+Files	files/app.rb	/^  class Files < Padrino::Application$/;"	c	class:PadrinoUpload
+PadrinoUpload	files/app.rb	/^module PadrinoUpload$/;"	m
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+Image	models/image.rb	/^class Image$/;"	c
+User	models/user.rb	/^class User$/;"	c
+create_ticket	models/user.rb	/^    def create_ticket$/;"	f	class:User
+password	models/user.rb	/^  def password$/;"	f	class:User
+password=	models/user.rb	/^  def password=(new_password)$/;"	f	class:User

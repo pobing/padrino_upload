@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title>Job Vacancy - find the best jobs</title>
+<title>Padrino upload test</title>
 </head>
 <body>
-	<p>Today is ,<%=Time.now%></p>
+  <% if current_user %>
+  <p>Welcome <%= current_user.email %></p>
+  <p><%=link_to "logout","/sso/signout"%></p>
+  <% else %>
+  <p><%=link_to "sign_in","/sso/signin"%></p>
+  <p><%=link_to "sign_up","/auth/signup"%></p>
+  <% end %>
+	<p>Today is ,<%= Time.now %></p>
   <%= yield %>
 </body>
 </html>

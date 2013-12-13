@@ -35,3 +35,5 @@ end
 
 # Mounts the core application for this project
 Padrino.mount('PadrinoUpload::App', :app_file => Padrino.root('app/app.rb')).to('/')
+
+Padrino.mount('PadrinoUpload::Files', :app_file => Padrino.root('files/app.rb')).to('/files')
